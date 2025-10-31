@@ -1,0 +1,6 @@
+
+from typing import Protocol, Any
+
+class Registry(Protocol):
+    def save(self, bundle: Any) -> str: ...
+    def load(self, version: str) -> Any: ...
